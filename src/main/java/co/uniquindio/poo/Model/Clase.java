@@ -23,6 +23,7 @@ public class Clase {
         this.horario = horario;
         this.cupoMax = cupoMax;
         this.cupo = cupo;
+        assert cupo>=0:"Los cupos de la clase no pueden ser negativos por logica";
         this.tipoClase = tipoClase;
         this.lisUsuariosClase =  new ArrayList<>();;
         this.theEntrenador = theEntrenador;

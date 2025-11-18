@@ -4,8 +4,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
-import static co.uniquindio.poo.Model.EstadoMembresia.INACTIVA;
-
 public class Recepcionista extends Trabajador implements PreguntarClase{
     private JornadaRecepcionista jornadaRecepcionista;
 
@@ -115,7 +113,7 @@ public class Recepcionista extends Trabajador implements PreguntarClase{
         }else {
             diasASumar=30;
         }
-         Calendar calendar =Calendar.getInstance();
+        Calendar calendar =Calendar.getInstance();
         calendar.setTime(date);
         calendar.add(Calendar.DATE,diasASumar);
 
